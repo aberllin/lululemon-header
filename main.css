@@ -1,9 +1,119 @@
+@font-face {
+    font-family: 'Calibre';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./fonts/Calibre-Thin.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'Calibre';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/Calibre-Light.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'Calibre';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Calibre-Regular.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'Calibre';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/Calibre-Medium.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'Calibre';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/Calibre-Semibold.woff2') format('woff2');
+
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Calibre';
+}
+
+header {
+    background-color: #fafafa;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-nav {
+.nav-tools{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0625rem;
+    line-height: 1.17647;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-bar ul li {
+    padding: 0 20px;
+}
+
+.nav-bar ul li a {
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+form {
+    position: relative;
+}
+
+form input {
+    padding: 12px 24px;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    width: 100%;
+    max-width: 120px;
+}
+
+input::placeholder {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #9c9a9a;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+}
+
+form svg {
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+    top: 12px;
+    font-weight: 100;
 }
