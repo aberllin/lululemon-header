@@ -41,79 +41,103 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Calibre';
+    font-family:  Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #fafafa;
+.community-links ul {
+    display: none;
+}
+
+.community-links ul:hover {
+    display: flex;
 }
 
 nav {
-    padding: 20px;
+    padding: 10px 40px;
+    background: #fafafa;
+}
+
+.logo {
+    width: 50px;
+}
+
+nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.nav-tools{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.0625rem;
-    line-height: 1.17647;
-}
-
-.nav-bar ul{
-    display: flex;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
     list-style: none;
+    align-items: center;
 }
 
-.nav-bar ul li {
-    padding: 0 20px;
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav-bar ul li a {
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+nav ul div.nav-links {
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+nav ul div.nav-links a {
+    text-decoration: none;
+    padding: 0 12px;
     color: black;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: inline-block;
 }
 
-form {
-    position: relative;
+.items {
+    display: flex;
+    align-items: center;
 }
 
-form input {
-    padding: 12px 24px;
-    border: none;
-    box-shadow: 0 1px 2px rgba(0,0,0,.05);
-    width: 100%;
-    max-width: 120px;
+nav ul div.items li.search-icon { 
+    padding: 0 22px;
 }
 
-input::placeholder {
-    padding: 5px;
-    font-size: 18px;
-    font-weight: 300;
-    color: #9c9a9a;
+nav ul div.items a {
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+    border-right: solid 0.5px gray;
+    padding-right: 22px;
 }
 
-input:focus {
-    outline: none;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+
+.hover-line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #d43e34;
+    transition: width .4s ease-in-out;
 }
 
-form svg {
-    position: absolute;
-    left: 10px;
-    pointer-events: none;
-    top: 12px;
-    font-weight: 100;
+.hover-line:hover::after {
+    width: 28px;
+    display: block;
+}
+
+
+.sign-in::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #d43e34;
+    transition: width .4s ease-in-out;
+}
+
+.sign-in:hover::after {
+    width: 46px;
+    display: block;
 }
