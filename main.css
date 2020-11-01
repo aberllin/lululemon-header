@@ -141,3 +141,19 @@ nav ul div.items a {
     width: 46px;
     display: block;
 }
+
+input[type="search"] {
+    padding: 10px;
+    border: none;
+}
+
+input[type="search"]:focus {
+    border: solid 0.5px rgb(190, 185, 185);
+    outline: none;
+}
+
+.search-icon span {
+    position: relative;
+    right: 35px;
+    cursor: pointer;
+}
