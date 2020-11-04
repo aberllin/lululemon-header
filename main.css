@@ -114,29 +114,30 @@ input[type="search"]:focus {
 
 
 
-.community-links .flex {
-background: #fafafa;
-padding: 30px 90px;
-  height: 0;
-  left: 0;
-  right: auto;
-  display: block;
-  opacity: 0;
-  position: absolute;
-  transition: all .5s ease;
-  top: 55px;
-  width: 100%;
-}
 
-.flex li {
-    padding: 10px 0;
-}
-
-.community-links:hover .flex {
-    height: 200px;
-    opacity: 1;
-    transform: translateY(0);
+.dropdown-menu {
+    display: none;
   }
+  
+  .community-links:hover .dropdown-menu {
+    display: flex;
+    position: absolute;
+    background: #fafafa;
+    width: 100%;
+    left: 0;
+    padding: 40px 72px;
+  }
+  
+  .community-links:hover .dropdown-menu ul {
+    display: block;
+    padding-right: 60px;
+  
+  }
+  
+  .community-links:hover .dropdown-menu ul li {
+    padding: 5px 0;
+  }
+  
 
 .arrow {
     color: #d43e34;
